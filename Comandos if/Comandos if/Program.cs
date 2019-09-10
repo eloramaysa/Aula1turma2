@@ -28,7 +28,7 @@ namespace Comandos_if
 
             }
             Console.ReadKey();
-            llll
+            
         }
     }
 }
