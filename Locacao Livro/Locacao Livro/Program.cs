@@ -10,6 +10,7 @@ namespace Locacao_Livro
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
