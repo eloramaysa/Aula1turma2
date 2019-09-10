@@ -10,8 +10,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Teste!");
+           
+            double raio, area; 
+            Console.WriteLine("Informa o valor do raio do círculo");
 
+            raio= Convert.ToDouble(Console.ReadLine());
+
+            area = 2 * Math.PI * raio;
+
+            Console.WriteLine("A área do círculo é "+ area);
             Console.ReadKey();
 
         }
