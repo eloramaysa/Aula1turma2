@@ -29,12 +29,15 @@ namespace Locacao_Livro
             }
             else
             {
-                Console.WriteLine("Livro disponível");
+                Console.WriteLine("Livro disponível, deseja alocar o livro? (1) sim e (2) não)");
+                var resposta = Console.ReadLine();
+                if(resposta == "1")
+                {
+                    Console.WriteLine("Livro alocado.");
+                    Console.ReadKey();
+                    return;
+                }
             }
-            Console.ReadKey();
-
-
-
         }
     }
 }
