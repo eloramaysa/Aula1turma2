@@ -10,22 +10,39 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int numPrimo = 1;
+            int numPrimo = 2;
 
-            for (int i = 1; i<=100; i++) { 
-
-                if(numPrimo%i == 0 && numPrimo % 2 != 0 && numPrimo == i) {
-                    Console.WriteLine(numPrimo);
-           
+            for (int i = 2; i <= 100; i++)
+            {
+                while (true)
+                {
+                    if (numPrimo % i != 0)
+                    {
+                        Console.WriteLine(numPrimo);
+                    }
+                    numPrimo++;
                 }
-                numPrimo = numPrimo + 1;
+               
+
             }
             Console.ReadKey();
+        }
+
+        /* int i = 2;
+         while (i <= 500)
+         {
+             int j = 2;
+             while (j < i && i % j != 0)
+                 j++;
+             if (i == j)
+                 Console.WriteLine(i.ToString());
+             i++;
+         }
+         Console.ReadKey();
+
+     } */
+
+    }
+}
 
 
-        }  
-            }
-            }
-        
-
-       
