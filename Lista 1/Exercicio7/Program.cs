@@ -39,12 +39,11 @@ pelo usuário.*/
 
             }
             Console.WriteLine($"A quantidade de vogais é {contador}");
-            Console.WriteLine("Você deseja saber a quantidade de cada letra? Sim 1 Não 2");
-            int resposta = int.Parse(Console.ReadKey().KeyChar.ToString());
+            string question = " \n Você deseja saber a quantidade de cada letra? Sim 1 Não 2";
+            int resposta = getOption(question); 
             while (resposta != 2 && resposta != 1)
             {
-                Console.WriteLine("Você deseja saber a quantidade de cada letra? Sim 1 Não 2");
-                resposta = int.Parse(Console.ReadKey().KeyChar.ToString());
+                resposta = getOption(question);
             }
             if (resposta == 1)
             {
@@ -57,6 +56,20 @@ pelo usuário.*/
 
             Console.ReadKey();
 
+        }
+
+        public static int getOption(string question)
+        {
+            int result = 0;
+            try
+            {
+                Console.WriteLine(question);
+                result = int.Parse(Console.ReadKey().KeyChar.ToString());
+            } catch
+            {
+              result = getOption(question);
+            }
+            return result;
         }
     }
 }
