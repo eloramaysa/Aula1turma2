@@ -14,9 +14,15 @@ pelo usuário.*/
         {
             Console.WriteLine("Informe um texto");
             string texto = Console.ReadLine();
+            //Tranforma o texto todo para letras minusculas. 
+            texto = texto.ToLower();
+            //Chamando funcao com o texto como parametro para encontrar as vogais 
             FindChar(texto);
         }
-
+        /// <summary>
+        /// Metodo para encontrar o numero de vogais dentro de um texto 
+        /// </summary>
+        /// <param name="texto"></param>
         public static void FindChar(String texto)
         {
             int tamanhoTexto = texto.Length;
@@ -26,19 +32,19 @@ pelo usuário.*/
             int contI = 0;
             int contO = 0;
             int contU = 0;
-
+           
             for (int i = 0; i < texto.Length; i++)
             {
                 if (texto[i] == 'a' || texto[i] == 'e' || texto[i] == 'i' || texto[i] == 'o' || texto[i] == 'u') contador++;
-                if (texto[i] == 'A' || texto[i] == 'E' || texto[i] == 'I' || texto[i] == 'O' || texto[i] == 'U') contador++;
-                if (texto[i] == 'a' || texto[i] == 'A') contA++;
-                if (texto[i] == 'e' || texto[i] == 'E') contE++;
-                if (texto[i] == 'i' || texto[i] == 'I') contI++;
-                if (texto[i] == 'o' || texto[i] == 'O') contO++;
-                if (texto[i] == 'u' || texto[i] == 'U') contU++;
+                if (texto[i] == 'a') contA++;
+                if (texto[i] == 'e') contE++;
+                if (texto[i] == 'i') contI++;
+                if (texto[i] == 'o') contO++;
+                if (texto[i] == 'u') contU++;
 
             }
             Console.WriteLine($"A quantidade de vogais é {contador}");
+
             string question = " \n Você deseja saber a quantidade de cada letra? Sim 1 Não 2";
             int resposta = getOption(question); 
             while (resposta != 2 && resposta != 1)
@@ -57,7 +63,11 @@ pelo usuário.*/
             Console.ReadKey();
 
         }
-
+        /// <summary>
+        /// Metodo para validar um resultado inteiro 
+        /// </summary>
+        /// <param name="question"></param>
+        /// <returns>um numero inteiro </returns>
         public static int getOption(string question)
         {
             int result = 0;
