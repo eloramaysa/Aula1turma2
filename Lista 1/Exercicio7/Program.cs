@@ -59,7 +59,7 @@ pelo usuário.*/
                 Console.WriteLine($"A quantidade de letras O é {contO}");
                 Console.WriteLine($"A quantidade de letras U é {contU}");
             }
-
+            Console.WriteLine("Aperte qualquer tecla para sair");
             Console.ReadKey();
 
         }
