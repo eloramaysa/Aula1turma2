@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CadastroPessoa.Model
 {
-    class Pessoa
+    public class Pessoa
     {
         public string Nome { get; set; }
 
