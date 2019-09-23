@@ -7,9 +7,9 @@ namespace InterfaceBiblioteca
     class Program
     {
         //torna-se uma base de dados, método construtor
-        static LivrosController livros = new LivrosController();
+        static LivrosController livrosController = new LivrosController();
 
-        static UsuarioController usuarios = new UsuarioController();
+        static UsuarioController usuariosController = new UsuarioController();
         static void Main(string[] args)
         {
             Console.WriteLine("SISTEMA DE LOCAÇÃO DE LIVROS 1.0");
@@ -23,6 +23,7 @@ namespace InterfaceBiblioteca
             Console.ReadKey();
         }
 
+
         /// <summary>
         /// Mostra no console o menu disponivel do sistema 
         /// </summary>
@@ -32,15 +33,18 @@ namespace InterfaceBiblioteca
             Console.WriteLine("SISTEMA DE LOCAÇÃO DE LIVROS 1.0");
 
             Console.WriteLine("Menu Sistema");
-            Console.WriteLine("1- Listar usuários");
+            Console.WriteLine("1- Listar Usuários");
             Console.WriteLine("2- Listar Livros");
             Console.WriteLine("3- Cadastrar Livro");
-            Console.WriteLine("4- Trocar de usuario");
+            Console.WriteLine("4 -Cadastrar Usuários ");
+            Console.WriteLine("5 - Remover Usuário ");
+            Console.WriteLine("6- Trocar de Usuario");
             Console.WriteLine("0- Sair ");
             var resposta = int.MinValue;
             while (resposta != 0)
             {
                 resposta = int.Parse(Console.ReadKey().KeyChar.ToString());
+                Console.Clear();
                 switch (resposta)
                 {
                     case 0:
@@ -56,7 +60,20 @@ namespace InterfaceBiblioteca
                         MostrarLivro();
                         MostraMenuSistema();
                         break;
+
+                    case 3:
+                        AdicionarLivro();
+                        MostraMenuSistema();
+                        break;
                     case 4:
+                        AdicionarUsuario();
+                        MostraMenuSistema();
+                        break;
+                    case 5:
+                        RemoverUsuarioPeloId();
+                        MostraMenuSistema();
+                        break;
+                    case 6:
                         while (!RealizaLoginSistema())
                             Console.WriteLine("Login e senha inválidos");
                         MostraMenuSistema();
@@ -70,22 +87,84 @@ namespace InterfaceBiblioteca
             Console.ReadKey();
         }
 
+        private static void RemoverUsuarioPeloId()
+        {
+            Console.WriteLine("Remover o usuário pelo Id no sistema");
+            MostrarUsuarios();
+
+            Console.WriteLine("Informe o Id para desativar do sistema:");
+            var usuarioID = int.Parse(Console.ReadLine());
+
+            usuariosController.RemoverUsuarioPorId(usuarioID);
+
+            Console.WriteLine("Usuário desativado com sucesso");
+            Console.ReadKey();
+        }
+
+        /// <summary>
+        /// Metodo para cadastrar um novo usuário
+        /// </summary>
+        private static void AdicionarUsuario()
+        {
+            Console.WriteLine("Cadastrar um novo usuário no sistema");
+            Console.WriteLine("Informe um novo usuário: ");
+            var novoUsuario = Console.ReadLine();
+            Console.WriteLine("Informe uma nova senha: ");
+            var senhaUsuario = Console.ReadLine();
+            usuariosController.AdicionaUsuario(new Usuario()
+            {
+                Login = novoUsuario,
+                Senha = senhaUsuario
+            }); 
+            Console.WriteLine("Usuário cadastrado com sucesso!");
+            Console.ReadKey();
+        }
+
+
+        /// <summary>
+        /// Metodo que adiciona dentro de nossa lista um novo registro de livro
+        /// </summary>
+        private static void AdicionarLivro()
+        {
+            //Identificamos que o mesmo esta na parte de cadastro de livros do sistema
+            Console.WriteLine("Cadastrar livro dentro do sistema: ");
+            Console.WriteLine("Nome do livro para cadastro");
+            var nomeDoLivro = Console.ReadLine();
+            //"livrosControlle" livros controle e o nosso"objeto" em memoria 
+            //Com isso temos disponivel nele ferramentas que nos ajudam a realizar as tarefas
+            //como adionar um item a nossa lista de livros
+            livrosController.AdicionarLivro(new Livro()
+            {
+                //Aqui atribuimos o nome que demos ao livro na propriedade Nome do nosso livro 
+                Nome = nomeDoLivro
+            });
+            Console.WriteLine("Livro cadastrado com sucesso!");
+            Console.ReadKey();
+        }
+
+
+
         /// <summary>
         /// Metodo que mostra os usuarios já cadastrados na lista
         /// </summary>
         private static void MostrarUsuarios()
         {
-            usuarios.Usuarios.ForEach(i => Console.WriteLine(i.Login));
+            usuariosController.RetornaListaDeUsuarios().ForEach(i => Console.WriteLine($"Id: {i.Id} Nome do Usuário: {i.Login}"));
             Console.ReadKey();
         }
+
+
         /// <summary>
         /// Metodo que mostra os livros já cadastrados no Livro 
         /// </summary>
         private static void MostrarLivro()
         {
-            livros.Livros.ForEach(i => Console.WriteLine(i.Nome));
+
+            livrosController.RetornaListaDeLivros().ForEach(i => Console.WriteLine($"Id: {i.Id} Nome do Livro: {i.Nome}"));
             Console.ReadKey();
         }
+
+
         /// <summary>
         /// Metodo que realiza os procedimentos completos de login dentro do sistema
         /// como solicitação de login e senha pelo console assim como a 
@@ -102,9 +181,7 @@ namespace InterfaceBiblioteca
             Console.WriteLine("Senha:");
             var senhaDoUsuario = Console.ReadLine();
 
-            UsuarioController usuarioController = new UsuarioController();
-
-            return usuarioController.LoginSistema(new Usuario()
+            return usuariosController.LoginSistema(new Usuario()
             {
                 Login = loginDoUsuario,
                 Senha = senhaDoUsuario

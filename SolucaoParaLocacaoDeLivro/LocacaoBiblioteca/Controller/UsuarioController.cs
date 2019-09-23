@@ -12,6 +12,9 @@ namespace LocacaoBiblioteca.Controller
     /// </summary>
     public class UsuarioController
     {
+        //Criando privado para impedir o programador de adionar um ID ou alterarar fora da classe
+        private int ContadorId = 100;
+
         /// <summary>
         /// Metodo que realiza o login dentro do nosso sistema
         /// Para realizar o login padrão use:
@@ -23,28 +26,70 @@ namespace LocacaoBiblioteca.Controller
         public bool LoginSistema(Usuario usuarios)
         {
             //Expressão lambda para saber se o login e senha informado estao no banco de dados 
-            return Usuarios.Exists(x => x.Login == usuarios.Login && x.Senha == usuarios.Senha);
+            return RetornaListaDeUsuarios().Exists(x => x.Login == usuarios.Login && x.Senha == usuarios.Senha);
         }
+
+
         /// <summary>
         /// Metodo que cria lista com todos os usuarios inseridos
         /// </summary>
-        public  List<Usuario> Usuarios { get; set; }
+        private  List<Usuario> Usuarios { get; set; }
+
+
         /// <summary>
         /// Metodo para adicionar novos usuarios na classe usuário
         /// </summary>
         public UsuarioController()
         {
+            
             Usuarios = new List<Usuario>();
             Usuarios.Add(new Usuario()
             {
                 Login = "admin",
-                Senha = "admin"
-            });
+                Senha = "admin",
+                Id = ContadorId++
+
+            }) ;
             Usuarios.Add(new Usuario()
             {
                 Login = "user",
-                Senha = "user"
+                Senha = "user",
+                Id = ContadorId++
             });
+        }
+
+
+        /// <summary>
+        /// Metodo para adicionar um novo usuario na lista usuarios e adiciona um novo id na propriedade Id
+        /// </summary>
+        /// <param name="parametroUsuario">Novo usuário que será adicionado a lista</param>
+        public void AdicionaUsuario(Usuario parametroUsuario)
+        {
+            parametroUsuario.Id = ContadorId++;
+            Usuarios.Add(parametroUsuario);
+        }
+
+
+        /// <summary>
+        /// Metodo que retorna nossa lista interna de usuarios 
+        /// </summary>
+        /// <returns>Lista contendo os usuarios ativos </returns>
+        public List<Usuario> RetornaListaDeUsuarios()
+        {
+            //Retorna agora somente a lsita de usuarios ativos com a expressao where
+            return Usuarios.Where(x=> x.Ativo).ToList<Usuario>();
+        }
+
+
+        /// <summary>
+        /// Metodo que desativa um registro de usuario cadastrado em nossa lista
+        /// </summary>
+        /// <param name="identificadoId">parametro que identifica o usuario que seta desativado </param>
+        public void RemoverUsuarioPorId(int identificadoId)
+        {
+            //Aqui usamos o metodo FirstOrDefault para localizar nosso usuario dentro da lista
+            //com isso conseguimos acessar as propriedade dele e desativar o registro
+            Usuarios.FirstOrDefault(x => x.Id == identificadoId).Ativo = false;
         }
 
     }
