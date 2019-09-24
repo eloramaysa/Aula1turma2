@@ -4,22 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ListaPessoas
+namespace ListaPessoas.Controller
 {
-    public class Pessoa
+    public class PessoaController
     {
-        public int Id { get; set;}
+        private List<Pessoa> ListaDePessoas { get; set; }
 
-        public string Nome { get; set; }
-        public DateTime DataDeNascimento { get; set;}
-
-        public double ValorCarteira { get; set;}
-    }
-}
-
-
-/* #region Adicionando Pessoas
-            var listaDePessoas = new List<Pessoa>
+        /// <summary>
+        /// O metodo contrutor ajuda a iniciar nosa classe para utilizarmos de maneira correta as informações internas, com isso podemos iniciar nossa lista de pessoas 
+        /// sem depender do usuario ou programador na parte da interface
+        /// </summary>
+        public PessoaController()
+        {
+            //Iniciamos a lista de pessoas dentro do nosso metodo construtor
+            ListaDePessoas = new List<Pessoa>
             {
                 new Pessoa()
                 {
@@ -169,41 +167,62 @@ namespace ListaPessoas
                     ValorCarteira =  667.00
                 },
             };
-            #endregion
 
-            #region Filtros Por Nome e Idade 
-            Console.WriteLine("Nomes em ordem Alfabética");
-            listaDePessoas.OrderBy(x => x.Nome).ToList<Pessoa>().ForEach(i =>
-            Console.WriteLine($" Id {i.Id } Nome: {i.Nome} Data de Nascimento: {i.DataDeNascimento} Carteira: R$ {i.ValorCarteira}"));
-            Console.ReadKey();
-            Console.Clear();
-           
+        }
+        /// <summary>
+        /// Temos uma propriedade agora que nos retorna nossa lista com essa propriedade temos a lista completa
+        /// e sem regras da lista de pessoas, mas ao liberar somente o GET não damos acesso para alterar fora da classe
+        /// a lista, apenas visualização 
+        /// </summary>
+        public List<Pessoa> ListaDePessoasPublica
+        {
+            //NO get podemos retorna propriedades privadas e calculo de metodos quando necessário 
+            get { return ListaDePessoas; }
+        }
+
+        /// <summary>
+        /// Metodo que retorna nossa lista de pessoas ordenada de forma Asc
+        /// pelo nome de cada uma
+        /// </summary>
+        /// <returns>Retornarmos o valor já ordenado de nossa lista</returns>
+        public List<Pessoa> GetPessoasOrdenadaAsc()
+        {
+            return ListaDePessoas.OrderBy(x => x.Nome).ToList<Pessoa>();
+        }
+        /// <summary>
+        /// Metodo publico que retorna a lista ordenada pela data de nascimento da maior data para a menor data
+        /// </summary>
+        /// <returns>Lista ordenada</returns>
+        public List<Pessoa> GetPessoasDataDecres()
+        {
+            return ListaDePessoas.OrderByDescending(x => x.DataDeNascimento).ToList<Pessoa>();
+        }
+        /// <summary>
+        /// Metodo publico que retorna a lista filtrada com as pessoas que tem mais de 500 reais na carteira
+        /// </summary>
+        /// <returns>Lista filtrada</returns>
+        public List<Pessoa> GetPessoasRicas(double valor=500) //Em caso de não informado o valor, o 500 passa a ser utilizado 
+        {
+            return ListaDePessoas.FindAll(x => x.ValorCarteira > valor).OrderBy(x => x.ValorCarteira).ToList<Pessoa>();
+        }
+        /// <summary>
+        /// Metodo publico que retorna lista filtrada de pessoas maiores de 18 anos 
+        /// </summary>
+        /// <returns>Lista Filtrada</returns>
+        public List<Pessoa> GetPessoasMaioresDe(int idade =18)
+        {
+            return ListaDePessoas.FindAll(x => ( (DateTime.Now.Year - x.DataDeNascimento.Year) >= idade)).ToList<Pessoa>();
+        }
+        /// <summary>
+        /// Metodo publico que retorna lista filtrada de pessoas mmenores de 16 anos 
+        /// </summary>
+        /// <param name="idade"></param>
+        /// <returns></returns>
+        public List<Pessoa> GetPessoasMenoresDe(int idade=16)
+        {
+            return ListaDePessoas.FindAll(x => ((DateTime.Now.Year - x.DataDeNascimento.Year) < idade)).ToList<Pessoa>();
+        }
 
 
-            Console.WriteLine("Nomes em ordem do mais novo para o mais velho");
-            listaDePessoas.OrderByDescending(x => x.DataDeNascimento).ToList<Pessoa>().ForEach(i => 
-            Console.WriteLine($" Id {i.Id } Nome: {i.Nome} Data de Nascimento: {i.DataDeNascimento} Carteira: R$ {i.ValorCarteira}"));
-            Console.ReadKey();
-            Console.Clear();
-            #endregion
-
-            #region Filtro Carteira > 500 reais
-            Console.WriteLine("Nome das pessoas que tem mais de 500 reais na carteira:");
-            listaDePessoas.FindAll(x=> x.ValorCarteira > 500).ToList<Pessoa>().ForEach(i =>
-            Console.WriteLine($" Id {i.Id } Nome: {i.Nome} Data de Nascimento: {i.DataDeNascimento} Carteira: R$ {i.ValorCarteira}"));
-            Console.ReadKey();
-            Console.Clear();
-            #endregion
-
-            #region Filtros 18 anos e 16 anos  
-            Console.WriteLine("Nome das pessoas que são maiores de 18 anos ou tem 18 anos");
-            listaDePessoas.FindAll(x=> (DateTime.Now.Year - x.DataDeNascimento.Year) >=18).ToList<Pessoa>().ForEach(i =>
-            Console.WriteLine($" Id {i.Id } Nome: {i.Nome} Data de Nascimento: {i.DataDeNascimento} Carteira: R$ {i.ValorCarteira}"));
-            Console.ReadKey();
-            Console.Clear();
-
-            Console.WriteLine("Nome das pessoas que são menores de 16 anos");
-            listaDePessoas.FindAll(x => (DateTime.Now.Year - x.DataDeNascimento.Year) <= 16).ToList<Pessoa>().ForEach(i =>
-            Console.WriteLine($" Id {i.Id } Nome: {i.Nome} Data de Nascimento: {i.DataDeNascimento} Carteira: R$ {i.ValorCarteira}"));
-            Console.ReadKey();
-             #endregion */
+    }
+}

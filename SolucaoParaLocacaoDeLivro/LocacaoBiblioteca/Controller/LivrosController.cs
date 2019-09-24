@@ -10,32 +10,12 @@ namespace LocacaoBiblioteca.Controller
    public class LivrosController
         
     {
-        private int ContadorId = 200;
-        /// <summary>
-        /// Metodo para adicionar livros na classe livros 
-        /// </summary>
+        private LocacaoContext contextDB = new LocacaoContext();
+      
         public LivrosController()
         {
-            Livros = new List<Livro>();
-            Livros.Add(new Livro()
-            {
-                Nome = "Meu primeiro Livro",
-                Id = ContadorId++
-                
-            });
-            Livros.Add(new Livro()
-            {
-                Nome = "Meu segundo Livro",
-                Id = ContadorId++
-            });
+            
         }
-
-
-        /// <summary>
-        /// Metodo que cria lista com todos os livros inseridos
-        /// </summary>
-        private List<Livro> Livros { get; set; }
-
 
         /// <summary>
         /// Metodo que adiciona o livro em nossa lista já "instaciada" criada dentro do construtor
@@ -44,8 +24,8 @@ namespace LocacaoBiblioteca.Controller
         public void AdicionarLivro(Livro parametroLivro)
         {
             //Adicionamos o livro em nossa lista
-            parametroLivro.Id = ContadorId++;
-            Livros.Add(parametroLivro);
+            parametroLivro.Id = contextDB.IdContadorLivros++;
+            contextDB.ListaDeLivros.Add(parametroLivro);
         }
 
 
@@ -55,7 +35,14 @@ namespace LocacaoBiblioteca.Controller
         /// <returns>Lista contendo os livros</returns>
         public List<Livro> RetornaListaDeLivros()
         {
-            return Livros;
+            return contextDB.ListaDeLivros.Where(x => x.Ativo).ToList<Livro>();
+        }
+        public void RemoverLivroPorID(int identificadoId)
+        {
+            //FirstOrDefault retorna null em caso de não encontrar um registro 
+            var livroSelecionado = contextDB.ListaDeLivros.FirstOrDefault(x => x.Id == identificadoId);
+            if (livroSelecionado != null)
+                livroSelecionado.Ativo = false;
         }
     }
 }
