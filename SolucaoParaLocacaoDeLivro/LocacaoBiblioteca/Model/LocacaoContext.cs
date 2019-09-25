@@ -9,6 +9,7 @@ namespace LocacaoBiblioteca.Model
     public class LocacaoContext
           
     {
+        //Classe onde está presente todos os dados do programa 
         public int IdContadorLivros { get; set; } = 200;
 
         public int IdContadorUsuarios { get; set; } = 100;
