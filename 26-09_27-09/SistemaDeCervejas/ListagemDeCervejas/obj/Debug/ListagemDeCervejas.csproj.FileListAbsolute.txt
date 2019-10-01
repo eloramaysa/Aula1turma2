@@ -1,0 +1,6 @@
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\ListagemDeCervejas\bin\Debug\ListagemDeCervejas.dll
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\ListagemDeCervejas\bin\Debug\ListagemDeCervejas.pdb
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\ListagemDeCervejas\obj\Debug\ListagemDeCervejas.csproj.CoreCompileInputs.cache
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\ListagemDeCervejas\obj\Debug\ListagemDeCervejas.dll
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\ListagemDeCervejas\obj\Debug\ListagemDeCervejas.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\SistemaDeCervejas\ListagemDeCervejas\bin\Debug\ListagemDeCervejas.xml

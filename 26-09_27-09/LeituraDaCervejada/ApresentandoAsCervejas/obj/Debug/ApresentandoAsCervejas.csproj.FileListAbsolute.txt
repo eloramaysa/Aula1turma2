@@ -1,0 +1,11 @@
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\LeituraDaCervejada\ApresentandoAsCervejas\bin\Debug\ApresentandoAsCervejas.exe.config
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\LeituraDaCervejada\ApresentandoAsCervejas\bin\Debug\ApresentandoAsCervejas.exe
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\LeituraDaCervejada\ApresentandoAsCervejas\bin\Debug\ApresentandoAsCervejas.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\LeituraDaCervejada\ApresentandoAsCervejas\bin\Debug\ListagemDeCervejas.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\LeituraDaCervejada\ApresentandoAsCervejas\bin\Debug\ListagemDeCervejas.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\LeituraDaCervejada\ApresentandoAsCervejas\bin\Debug\ListagemDeCervejas.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\LeituraDaCervejada\ApresentandoAsCervejas\obj\Debug\ApresentandoAsCervejas.csprojAssemblyReference.cache
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\LeituraDaCervejada\ApresentandoAsCervejas\obj\Debug\ApresentandoAsCervejas.csproj.CoreCompileInputs.cache
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\LeituraDaCervejada\ApresentandoAsCervejas\obj\Debug\ApresentandoAsCervejas.csproj.CopyComplete
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\LeituraDaCervejada\ApresentandoAsCervejas\obj\Debug\ApresentandoAsCervejas.exe
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\LeituraDaCervejada\ApresentandoAsCervejas\obj\Debug\ApresentandoAsCervejas.pdb

@@ -1,0 +1,11 @@
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\DllWin\DllWin\bin\Debug\DllWin.exe.config
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\DllWin\DllWin\bin\Debug\DllWin.exe
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\DllWin\DllWin\bin\Debug\DllWin.pdb
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\DllWin\DllWin\bin\Debug\DllPastaWin.dll
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\DllWin\DllWin\bin\Debug\DllPastaWin.pdb
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\DllWin\DllWin\bin\Debug\DllPastaWin.xml
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\DllWin\DllWin\obj\Debug\DllWin.csprojAssemblyReference.cache
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\DllWin\DllWin\obj\Debug\DllWin.csproj.CoreCompileInputs.cache
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\DllWin\DllWin\obj\Debug\DllWin.csproj.CopyComplete
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\DllWin\DllWin\obj\Debug\DllWin.exe
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\DllWin\DllWin\obj\Debug\DllWin.pdb

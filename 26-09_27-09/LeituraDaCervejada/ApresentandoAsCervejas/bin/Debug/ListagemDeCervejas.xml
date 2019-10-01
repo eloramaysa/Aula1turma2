@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ListagemDeCervejas</name>
+    </assembly>
+    <members>
+        <member name="M:ListagemDeCervejas.Controller.CervejaController.RetornaListaDeCerveja">
+            <summary>
+            Metodo que retorna a lista de Cerveja
+            </summary>
+            <returns>Lista de Cerveja</returns>
+        </member>
+        <member name="P:ListagemDeCervejas.Model.SistemaCervejaContext.ListaDeCervejas">
+            <summary>
+            Nossa massa de dados interna
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ListagemDeCervejas.Model.SistemaCervejaContext.#ctor" -->
+        <member name="P:ListagemDeCervejas.Model.SistemaCervejaContext.ListaCervejasPublica">
+            <summary>
+            Propriedade que contem as vendas realizadas sem nenhum tipo de filtro
+            </summary>
+        </member>
+    </members>
+</doc>

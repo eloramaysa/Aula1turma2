@@ -1,0 +1,7 @@
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\Sistema de Carros\ListagemDeCarros\bin\Debug\ListagemDeCarros.xml
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\Sistema de Carros\ListagemDeCarros\bin\Debug\ListagemDeCarros.dll
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\Sistema de Carros\ListagemDeCarros\bin\Debug\ListagemDeCarros.pdb
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\Sistema de Carros\ListagemDeCarros\obj\Debug\ListagemDeCarros.csprojAssemblyReference.cache
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\Sistema de Carros\ListagemDeCarros\obj\Debug\ListagemDeCarros.csproj.CoreCompileInputs.cache
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\Sistema de Carros\ListagemDeCarros\obj\Debug\ListagemDeCarros.dll
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\Sistema de Carros\ListagemDeCarros\obj\Debug\ListagemDeCarros.pdb

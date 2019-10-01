@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ListagemDeCervejas</name>
+    </assembly>
+    <members>
+        <member name="M:ListagemDeCervejas.Controller.CervejaController.ListagemCervejas">
+            <summary>
+            Metodo que retorna para o usuario a listagem de todas as cervejas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ListagemDeCervejas.Controller.CervejaController.AdicionarCerveja(ListagemDeCervejas.Model.Cerveja)">
+            <summary>
+            Metodo que adiciona novas cervejas na lista cerveja
+            </summary>
+            <param name="cerveja"></param>
+        </member>
+        <member name="M:ListagemDeCervejas.Controller.CervejaController.TotalCerveja">
+            <summary>
+            Metodo que calcula a quantidade de itens dentro da lista cerveja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ListagemDeCervejas.Controller.CervejaController.TotalLitros">
+            <summary>
+            Metodo que calcula a quantidade de litros de cerveja está presente na lista 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ListagemDeCervejas.Controller.CervejaController.TotalTeor">
+            <summary>
+            Metodo que soma a quantidade de teor alcoolico presente na lista de cerveja
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ListagemDeCervejas.Controller.CervejaController.TeorAlcool(System.Double,System.Char)">
+            <summary>
+            Metodo que calcular o teor alcoolico no sangue da pessoa e infoma se ela será presa ou não
+            </summary>
+            <param name="peso"></param>
+            <param name="sexo"></param>
+        </member>
+    </members>
+</doc>

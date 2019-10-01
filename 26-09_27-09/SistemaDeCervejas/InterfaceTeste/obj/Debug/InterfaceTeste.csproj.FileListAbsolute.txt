@@ -1,0 +1,10 @@
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\InterfaceTeste\bin\Debug\InterfaceTeste.exe.config
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\InterfaceTeste\bin\Debug\InterfaceTeste.exe
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\InterfaceTeste\bin\Debug\InterfaceTeste.pdb
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\InterfaceTeste\bin\Debug\ListagemDeCervejas.dll
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\InterfaceTeste\bin\Debug\ListagemDeCervejas.pdb
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\InterfaceTeste\obj\Debug\InterfaceTeste.csprojAssemblyReference.cache
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\InterfaceTeste\obj\Debug\InterfaceTeste.csproj.CoreCompileInputs.cache
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\InterfaceTeste\obj\Debug\InterfaceTeste.csproj.CopyComplete
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\InterfaceTeste\obj\Debug\InterfaceTeste.exe
+C:\Users\900080\Source\Repos\eloramaysa\Aula1turma2\SistemaDeCervejas\InterfaceTeste\obj\Debug\InterfaceTeste.pdb

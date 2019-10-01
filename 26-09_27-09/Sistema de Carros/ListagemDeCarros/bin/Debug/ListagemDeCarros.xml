@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ListagemDeCarros</name>
+    </assembly>
+    <members>
+        <member name="M:ListagemDeCarros.Controller.CarroController.ListagemCarros">
+            <summary>
+            Metodo que lista os dados presente na nossa estrutura de dados
+            </summary>
+            <returns> Retorna a nossa lista de carros</returns>
+        </member>
+        <member name="P:ListagemDeCarros.Model.SistemaCarrosContext.ListaDeCarros">
+            <summary>
+            Metodo que cria lista de carros que será armazenado posteriormente
+            </summary>
+        </member>
+        <member name="M:ListagemDeCarros.Model.SistemaCarrosContext.#ctor">
+            <summary>
+            Metodo que armazena os dados na lista de carros
+            </summary>
+        </member>
+    </members>
+</doc>
