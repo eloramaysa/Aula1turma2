@@ -1,0 +1,14 @@
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\bin\Debug\ListaDeNomes.exe.config
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\bin\Debug\ListaDeNomes.exe
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\bin\Debug\ListaDeNomes.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\bin\Debug\BancoNomes.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\bin\Debug\EntityFramework.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\bin\Debug\BancoNomes.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\bin\Debug\BancoNomes.dll.config
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\bin\Debug\EntityFramework.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\obj\Debug\ListaDeNomes.csprojAssemblyReference.cache
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\obj\Debug\ListaDeNomes.csproj.CopyComplete
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\obj\Debug\ListaDeNomes.exe
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\ListaDeNomes\obj\Debug\ListaDeNomes.pdb

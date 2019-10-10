@@ -14,17 +14,17 @@ namespace InterfaceBiblioteca
         static LivrosController livrosController = new LivrosController();
 
         static UsuarioController usuariosController = new UsuarioController();
+
         static void Main(string[] args)
         {
             Console.WriteLine("SISTEMA DE LOCAÇÃO DE LIVROS 1.0");
             //Enquanto o metodo retorna o valor falso, retorna a mensagem de dados inválidos 
-            //e chama o metod de novo até a inserção correta 
-            //while (!RealizaLoginSistema())
-                //Console.WriteLine("Login e senha inválidos");
+            //e chama o metodo de novo até a inserção correta 
+          while (!RealizaLoginSistema())
+               Console.WriteLine("Login e senha inválidos");
 
             MostraMenuSistema();
             Console.ReadKey();
-
 
         }
 
@@ -34,24 +34,23 @@ namespace InterfaceBiblioteca
         /// </summary>
         private static void MostraMenuSistema()
         {
-            Console.Clear();
-            Console.WriteLine("SISTEMA DE LOCAÇÃO DE LIVROS 1.0");
-
-            Console.WriteLine("Menu Sistema");
-            Console.WriteLine("1- Listar Usuários");
-            Console.WriteLine("2- Listar Livros");
-            Console.WriteLine("3- Cadastrar Livro");
-            Console.WriteLine("4 -Cadastrar Usuários ");
-            Console.WriteLine("5 - Remover Usuário ");
-            Console.WriteLine("6 - Remover Livro ");
-            Console.WriteLine("7 - Alterar Usuário");
-            Console.WriteLine("8- Alterar Livro");
-            Console.WriteLine("9- Trocar de Usuario");
-            Console.WriteLine("0- Sair ");
-
+           
             var resposta = int.MinValue;
             while (resposta != 0)
             {
+                Console.WriteLine("SISTEMA DE LOCAÇÃO DE LIVROS 1.0");
+
+                Console.WriteLine("Menu Sistema");
+                Console.WriteLine("1- Listar Usuários");
+                Console.WriteLine("2- Listar Livros");
+                Console.WriteLine("3- Cadastrar Livro");
+                Console.WriteLine("4 -Cadastrar Usuários ");
+                Console.WriteLine("5 - Remover Usuário ");
+                Console.WriteLine("6 - Remover Livro ");
+                Console.WriteLine("7 - Alterar Usuário");
+                Console.WriteLine("8- Alterar Livro");
+                Console.WriteLine("9- Trocar de Usuario");
+                Console.WriteLine("0- Sair ");
                 resposta = int.Parse(Console.ReadKey().KeyChar.ToString());
                 Console.Clear();
                 switch (resposta)
@@ -61,53 +60,58 @@ namespace InterfaceBiblioteca
                         break;
                     case 1:
                         MostrarUsuarios();
-                        Console.ReadKey();
-                        MostraMenuSistema();
+                       
+                        //MostraMenuSistema();
 
                         break;
 
                     case 2:
                         MostrarLivro();
-                        Console.ReadKey();
-                        MostraMenuSistema();
+                        
+                        //MostraMenuSistema();
                         break;
 
                     case 3:
                         AdicionarLivro();
-                        MostraMenuSistema();
+                        //MostraMenuSistema();
                         break;
                     case 4:
                         AdicionarUsuario();
-                        MostraMenuSistema();
+                       // MostraMenuSistema();
                         break;
                     case 5:
                         RemoverUsuarioPeloId();
-                        MostraMenuSistema();
+                       // MostraMenuSistema();
                         break;
                     case 6:
                         RemoverLivroPeloId();
-                        MostraMenuSistema();
+                      //  MostraMenuSistema();
                         break;
                     case 7:
                         AlterarUsuario();
-                        MostraMenuSistema();
+                       // MostraMenuSistema();
                         break;
                     case 8:
                         AlterarLivro();
-                        MostraMenuSistema();
+                       //MostraMenuSistema();
                         break;
                     case 9:
                         while (!RealizaLoginSistema())
                             Console.WriteLine("Login e senha inválidos");
-                        MostraMenuSistema();
+                        //MostraMenuSistema();
                         break;
+                  
                     default:
-                        MostraMenuSistema();
+                       
                         break;
+                 
                 }
+                Console.ReadKey(true);
+                Console.Clear();
 
             }
-            Console.ReadKey();
+
+
         }
 
 
@@ -129,6 +133,8 @@ namespace InterfaceBiblioteca
             }
             Console.WriteLine("Informe o nome do Usuario:");
             usuAlt.Login = Console.ReadLine();
+            Console.WriteLine("Informe uma nova senha:");
+            usuAlt.Senha = Console.ReadLine();
 
             var resultado = usuariosController.AlterarUsuario(usuAlt);
             if (resultado) Console.WriteLine("Usuario Atualizado com sucesso");
@@ -240,7 +246,7 @@ namespace InterfaceBiblioteca
         /// </summary>
         private static void MostrarUsuarios()
         {
-            usuariosController.GetUsuarios().ToList<Usuario>().ForEach(i => Console.WriteLine($"Id: {i.Id} Nome do Usuário: {i.Login}"));
+            usuariosController.GetUsuarios().ToList<Usuario>().ForEach(i => Console.WriteLine($"Id: {i.Id} Nome do Usuário: {i.Login} "));
         }
 
 
