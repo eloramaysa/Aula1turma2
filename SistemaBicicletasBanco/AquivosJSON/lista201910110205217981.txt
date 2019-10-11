@@ -1,0 +1,1 @@
+[{"Id":3,"Modelo":"ashahs","Marca":"ahsuah","Preco":3456.0,"Ativo":true,"UsuarioCriacao":0,"UsuarioAlteracao":0,"DataCriacao":"2019-10-11T11:44:41","DataAlteracao":"2019-10-11T11:44:41"},{"Id":2,"Modelo":"Bike2","Marca":"Caloi","Preco":2345.0,"Ativo":true,"UsuarioCriacao":0,"UsuarioAlteracao":0,"DataCriacao":"2019-10-11T11:40:31.043","DataAlteracao":"2019-10-11T11:40:31.043"}]
