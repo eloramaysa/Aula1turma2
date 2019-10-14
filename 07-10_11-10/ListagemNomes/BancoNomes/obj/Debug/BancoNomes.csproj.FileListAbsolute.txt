@@ -1,0 +1,11 @@
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\BancoNomes\bin\Debug\BancoNomes.dll.config
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\BancoNomes\bin\Debug\BancoNomes.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\BancoNomes\bin\Debug\BancoNomes.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\BancoNomes\bin\Debug\EntityFramework.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\BancoNomes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\BancoNomes\bin\Debug\EntityFramework.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\BancoNomes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\BancoNomes\obj\Debug\BancoNomes.csprojAssemblyReference.cache
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\BancoNomes\obj\Debug\BancoNomes.csproj.CopyComplete
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\BancoNomes\obj\Debug\BancoNomes.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemNomes\BancoNomes\obj\Debug\BancoNomes.pdb

@@ -1,0 +1,14 @@
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\bin\Debug\Floricultura.exe.config
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\bin\Debug\Floricultura.exe
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\bin\Debug\Floricultura.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\bin\Debug\BancoFlores.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\bin\Debug\EntityFramework.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\bin\Debug\BancoFlores.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\bin\Debug\BancoFlores.dll.config
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\bin\Debug\EntityFramework.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\obj\Debug\Floricultura.csprojAssemblyReference.cache
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\obj\Debug\Floricultura.csproj.CopyComplete
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\obj\Debug\Floricultura.exe
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\Floricultura\obj\Debug\Floricultura.pdb

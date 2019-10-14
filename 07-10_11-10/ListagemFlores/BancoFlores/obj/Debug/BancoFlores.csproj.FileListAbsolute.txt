@@ -1,0 +1,11 @@
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\BancoFlores\bin\Debug\BancoFlores.dll.config
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\BancoFlores\bin\Debug\BancoFlores.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\BancoFlores\bin\Debug\BancoFlores.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\BancoFlores\bin\Debug\EntityFramework.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\BancoFlores\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\BancoFlores\bin\Debug\EntityFramework.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\BancoFlores\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\BancoFlores\obj\Debug\BancoFlores.csprojAssemblyReference.cache
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\BancoFlores\obj\Debug\BancoFlores.csproj.CopyComplete
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\BancoFlores\obj\Debug\BancoFlores.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\ListagemFlores\BancoFlores\obj\Debug\BancoFlores.pdb

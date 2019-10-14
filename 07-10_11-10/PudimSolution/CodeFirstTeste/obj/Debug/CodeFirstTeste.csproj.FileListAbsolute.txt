@@ -1,0 +1,11 @@
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\PudimSolution\CodeFirstTeste\bin\Debug\CodeFirstTeste.dll.config
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\PudimSolution\CodeFirstTeste\bin\Debug\CodeFirstTeste.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\PudimSolution\CodeFirstTeste\bin\Debug\CodeFirstTeste.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\PudimSolution\CodeFirstTeste\bin\Debug\EntityFramework.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\PudimSolution\CodeFirstTeste\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\PudimSolution\CodeFirstTeste\bin\Debug\EntityFramework.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\PudimSolution\CodeFirstTeste\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\PudimSolution\CodeFirstTeste\obj\Debug\CodeFirstTeste.csprojAssemblyReference.cache
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\PudimSolution\CodeFirstTeste\obj\Debug\CodeFirstTeste.csproj.CopyComplete
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\PudimSolution\CodeFirstTeste\obj\Debug\CodeFirstTeste.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\PudimSolution\CodeFirstTeste\obj\Debug\CodeFirstTeste.pdb
