@@ -1,0 +1,30 @@
+#corpo {
+    margin-left: 30%;
+    margin-top: 12%;
+    width: 700px;
+    height: 300px;
+    background-color: #cebdbd;
+}
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/15/08/56/neutral-2852878_960_720.jpg');
+    background-size:cover;
+}
+#titulo {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+#conteudo {
+    text-align: justify;
+    margin-top: 20px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+#botao {
+    margin-left: 25%;
+    margin-top: 20px;
+    width: 300px;
+    color: black;
+}

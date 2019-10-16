@@ -1,0 +1,27 @@
+body {
+    background-image: url('https://pt.shopify.com/burst/imagens-hd/rio-europeu/download?c=plano-de-fundo');
+    background-size:cover;
+    
+}
+#imagem {
+    width: 200px;
+    height: 200px;
+    
+}
+#corpo {
+    position:absolute;
+    margin-top: 5%;
+    width: 550px;
+    margin-left: 30%;
+}
+
+#nome {
+   
+    margin: 40px;
+    margin-left: 2px;
+}
+#botao {
+    margin: 40px;
+    margin-left: 2px;
+    background-color:aliceblue;
+}
