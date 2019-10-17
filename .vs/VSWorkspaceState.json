@@ -1,8 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WEB"
+    "\\24-09_25-09",
+    "\\24-09_25-09\\IniciandoLista",
+    "\\24-09_25-09\\IniciandoLista\\ConversorMonetario",
+    "\\24-09_25-09\\IniciandoLista\\PublicMetod",
+    "\\WEB",
+    "\\WEB\\Exercicio1",
+    "\\WEB\\Exercicio2",
+    "\\WEB\\Exercicio2\\js",
+    "\\WEB\\Iniciando Web"
   ],
-  "SelectedNode": "\\WEB\\Exerc1Js.html",
+  "SelectedNode": "\\WEB\\Exercicio2\\js\\jquery.maskedinput-1.1.4.pack.js",
   "PreviewInSolutionExplorer": false
 }

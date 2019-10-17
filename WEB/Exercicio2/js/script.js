@@ -9,21 +9,31 @@ $(document).ready(function () {
         if (tipo == "dolar") {
            
             var result = valor / 4.16;
-            $('output[name="total"]').val(result)
+            
+            $('input[name="total"]').mask('#.##0,00', { reverse: true }).val(result + " Dolares").trigger('input');
            
 
         } if (tipo == "euro") {
 
             var result = valor / 4.61;
-            alert("Seu valor convertido é igual a: " + result + " euros");
+            $('input[name="total"]').val(result + " Euros");
         }
         if (tipo == "pesoArg"){
             var result = valor * 13.88;
-            alert("Seu valor convertido é igual a: " + result + " Peso Argentino");
+            $('input[name="total"]').val(result + " Pesos Argentinos");
         }
 
     });
+
+    $("#money").keyup(function () {
+        alert("Handler for .keyup() called.");
+    });
+
     $("#valor").mask('#.##0,00', { reverse: true });
+
+    $("#money").mask('#.##0,00', { reverse: true });
+
+   
 });
 
 String.prototype.replaceAll = String.prototype.replaceAll || function (needle, replacement) {

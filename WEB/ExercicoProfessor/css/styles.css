@@ -1,0 +1,13 @@
+body {
+    background-image: url('http://www.saboravida.com.br/wp-content/uploads/2018/01/conheca-as-cervejas-artesanais-de-campos-do-jordao-em-sao-paulo-1.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+#corpo {
+    
+    
+    background-color: #cbd1d7ab;
+}
+#conteudo{
+    margin:15px;
+}

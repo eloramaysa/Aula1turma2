@@ -9,7 +9,7 @@ body {
     background-image: url('https://cdn.pixabay.com/photo/2017/10/15/08/56/neutral-2852878_960_720.jpg');
     background-size:cover;
 }
-#titulo {
+#titulo{
     text-align: center;
     color: black;
     font-weight: bold;
@@ -27,4 +27,9 @@ body {
     margin-top: 20px;
     width: 300px;
     color: black;
+}
+#money {
+    margin-left: 11%;
+    margin-top: 20px;
+    width: 300px;
 }
