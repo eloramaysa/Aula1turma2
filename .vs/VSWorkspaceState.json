@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\24-09_25-09",
-    "\\24-09_25-09\\IniciandoLista",
-    "\\24-09_25-09\\IniciandoLista\\ConversorMonetario",
-    "\\24-09_25-09\\IniciandoLista\\PublicMetod",
     "\\WEB",
-    "\\WEB\\Exercicio1",
+    "\\WEB\\Exercicio1\\css",
+    "\\WEB\\Exercicio1\\js",
     "\\WEB\\Exercicio2",
-    "\\WEB\\Exercicio2\\js",
-    "\\WEB\\Iniciando Web"
+    "\\WEB\\Exercicio2\\css",
+    "\\WEB\\ExercicioProf2\\css",
+    "\\WEB\\ExercicioProf2\\js",
+    "\\WEB\\ExercicoProfessor\\css",
+    "\\WEB\\ExercicoProfessor\\js"
   ],
-  "SelectedNode": "\\WEB\\Exercicio2\\js\\jquery.maskedinput-1.1.4.pack.js",
+  "SelectedNode": "\\WEB\\Exercicio2\\js\\script.js",
   "PreviewInSolutionExplorer": false
 }

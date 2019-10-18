@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Animais</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div id="titulo"class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">CADASTRO DE ANIMAIS</a>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Temos nosso conteudo ocupando todo o espa�o da viewport -->
+    <div id="estrutura" class="container-fluid h-100">
+        <!-- Aqui temos nossa primeira linha do site -->
+        <div id="teste" class="row d-flex align-content-center justify-content-center h-100">
+            <!-- Aqui crio o separador "div" e sinalizo que o mesmo ir� -->
+            <!-- Usar apenas 3/12 de nossa area total disponivel -->
+            <div id="corpo" class="col-md-3">
+                <div class="row">
+                    <!-- input type="text" class="w-100 form-control form-group" name="valoreal" placeholder="Informe valor em real" /-->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Nome</span>
+                        </div>
+                        <input type="text" class="form-control" name="nome" placeholder="Nome do Animal" />
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- input type="text" class="w-100 form-control form-group" name="valoreal" placeholder="Informe valor em real" /-->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Idade</span>
+                        </div>
+                        <input type="text" class="form-control" name="idade" placeholder="Idade do Animal" />
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- input type="text" class="w-100 form-control form-group" name="valoreal" placeholder="Informe valor em real" /-->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Raca</span>
+                        </div>
+                        <input type="text" class="form-control" name="raca" placeholder="Raça do Animal" />
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- input type="text" class="w-100 form-control form-group" name="valoreal" placeholder="Informe valor em real" /-->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Coloração</span>
+                        </div>
+                        <input type="text" class="form-control" name="cor" placeholder="Coloração do Animal" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input id="salvar" type="button" class="form-control w3-button w3-black w3-right w3-section " name="salvar" value="Salvar" />
+                        <input id="mostrar" type="button" class="form-control w3-button w3-black w3-right w3-section " name="mostrar" value="Mostrar" />
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

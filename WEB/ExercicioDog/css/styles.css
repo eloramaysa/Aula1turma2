@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    background-image: url('https://http2.mlstatic.com/papel-de-parede-adesivo-patas-cachorros-D_NQ_NP_800920-MLB26461204341_112017-F.jpg');
+    background-size: cover;
+}
+#corpo {
+    
+    padding: 40px;
+    margin-left: 60px;
+  
+}
+#mostrar{
+    margin-left:20px;
+    
+}
+
+#titulo{
+    margin-left:38%;
+}
