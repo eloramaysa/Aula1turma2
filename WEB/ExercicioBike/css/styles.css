@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+    background-image: url('https://images.tcdn.com.br/img/img_prod/435457/bicicleta_eletrica_passeio_e_bike_duos_confort_800w_preta_1903_1_20190415174053.jpg');
+    background-size: cover;
+}
+
+#corpo {
+    padding: 40px;
+    margin-left: 60px;
+}
+
+#mostrar {
+    margin-left: 20px;
+}
+
+#titulo {
+    margin-left: 38%;
+}

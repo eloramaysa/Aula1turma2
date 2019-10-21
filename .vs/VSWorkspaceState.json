@@ -2,15 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\WEB",
-    "\\WEB\\Exercicio1\\css",
-    "\\WEB\\Exercicio1\\js",
+    "\\WEB\\ConversorProf",
     "\\WEB\\Exercicio2",
     "\\WEB\\Exercicio2\\css",
-    "\\WEB\\ExercicioProf2\\css",
-    "\\WEB\\ExercicioProf2\\js",
-    "\\WEB\\ExercicoProfessor\\css",
-    "\\WEB\\ExercicoProfessor\\js"
+    "\\WEB\\Exercicio2\\js",
+    "\\WEB\\ExercicioDog",
+    "\\WEB\\ExercicioDog\\css",
+    "\\WEB\\ExercicioDog\\js"
   ],
-  "SelectedNode": "\\WEB\\Exercicio2\\js\\script.js",
+  "SelectedNode": "\\WEB\\Exercicio2\\Index.html",
   "PreviewInSolutionExplorer": false
 }
