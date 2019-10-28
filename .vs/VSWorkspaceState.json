@@ -1,12 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\IMCCalc",
+    "\\IMCCalc\\IMCCalc",
     "\\WEB",
     "\\WEBAPI",
-    "\\WEBAPI\\js",
+    "\\WEBAPI\\css",
     "\\WEB\\Exercicio1",
-    "\\WEB\\Exercicio1\\js"
+    "\\WEB\\Exercicio1\\css",
+    "\\WEB\\Exercicio2",
+    "\\WEB\\Exercicio2\\css"
   ],
-  "SelectedNode": "\\IMC",
+  "SelectedNode": "\\IMCCalc\\IMCCalc\\Index.html",
   "PreviewInSolutionExplorer": false
 }

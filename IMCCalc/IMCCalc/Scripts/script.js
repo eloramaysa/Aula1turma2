@@ -7,12 +7,12 @@
        
 
         //Enviamos o post para nosso servidor web
-        $.post("http://localhost:51191/api/IMC/Post"+ informacoes, function (data) {
+        $.post("http://localhost:51191/api/IMC/Post", informacoes, function (data) {
             //aqui como recebemos uma string com formato de JSON
             //temos que passar ela para o JSON parecido com o int.Parse()
-            data = JSON.parse(data);
+            
             //Aqui carregamos as informações automaticamente
-            alert(data);
+            $("#resultado").text(data);
         });
     });
 });

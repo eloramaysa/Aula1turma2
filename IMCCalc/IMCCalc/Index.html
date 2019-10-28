@@ -2,38 +2,76 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Calculo de IMC</title>
+
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
     <div class="row h-100" style="background-color:transparent;">
         <div class="col-12 h-100 d-table" style="background-color:transparent;">
             <div class="card card-block d-table-cell align-middle" style="background-color:transparent;">
-                <div class="row d-flex justify-content-center">
+                <div class="row d-flex align-content-center justify-content-center h-100">
                     <div class="card align-middle" style="background:#5c64ce2b; padding: 40px; text-align: center;">
                         <form name="formenviar">
-
-                            <span><input type="text" name="nome" placeholder="Informe seu Nome" /></span>
-                            <span><input type="text" name="peso" placeholder="Informe seu Peso em kg" /></span>
-                            <span><input type="text" name="altura" placeholder="Informe sue Altura em m" /></span>
-
+                            <div class="input-group mb-3" style=" grid-column-gap: 50px;">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Nome:</span>
+                                </div>
+                                <span><input id="caixa" type="text" name="Nome" placeholder="Informe seu Nome" /></span>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Peso:</span>
+                                </div>
+                                <span><input id="caixa"  type="text" name="Peso" placeholder="Informe seu Peso em kg" /></span>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Altura:</span>
+                                </div>
+                               
+                                    <span><input id="caixa" type="text" name="Altura" placeholder="Informe sue Altura em m" /></span>
+                             
+                                
+                            </div>
+                           
                             <div>
 
                                 <div class="col-md-12">
                                     <input type="button" data-toggle="modal" data-target="#modalExemplo" name="consultar" value="Consultar" />
                                 </div>
                             </div>
-                            </form>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div name="mensagem" class="modal-header">
+
+                    <span id="resultado"> </span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="Scripts/script.js"></script>
+
 </body>
 </html>
