@@ -2,14 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\WEB",
-    "\\WEB\\ConversorProf",
-    "\\WEB\\Exercicio2",
-    "\\WEB\\Exercicio2\\css",
-    "\\WEB\\Exercicio2\\js",
-    "\\WEB\\ExercicioDog",
-    "\\WEB\\ExercicioDog\\css",
-    "\\WEB\\ExercicioDog\\js"
+    "\\WEBAPI",
+    "\\WEBAPI\\js",
+    "\\WEB\\Exercicio1",
+    "\\WEB\\Exercicio1\\js"
   ],
-  "SelectedNode": "\\WEB\\Exercicio2\\Index.html",
+  "SelectedNode": "\\IMC",
   "PreviewInSolutionExplorer": false
 }

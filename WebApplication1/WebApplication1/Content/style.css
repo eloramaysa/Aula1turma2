@@ -1,0 +1,16 @@
+﻿body {
+    height: 100vh;
+}
+#corpo {
+    border:outset;
+    width:800px;
+    margin-top:5%;
+}
+#titulo{
+    text-align:center;
+}
+#botao{
+    margin-left: 37%;
+    width: 200px;
+    
+}
