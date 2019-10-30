@@ -1,0 +1,16 @@
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\bin\Debug\ConsoleMigration.exe.config
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\bin\Debug\ConsoleMigration.exe
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\bin\Debug\ConsoleMigration.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\bin\Debug\EntityFramework.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\bin\Debug\EntityFramework.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\obj\Debug\ConsoleMigration.csprojAssemblyReference.cache
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\obj\Debug\ConsoleMigration.csproj.CopyComplete
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\obj\Debug\ConsoleMigration.exe
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\obj\Debug\ConsoleMigration.pdb
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\obj\Debug\ConsoleMigration.Migrations.InitialCreate.resources
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\obj\Debug\ConsoleMigration.csproj.GenerateResource.cache
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\obj\Debug\ConsoleMigration.Migrations.AddEmailUsuario.resources
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\obj\Debug\ConsoleMigration.Migrations.AddControleUsuario.resources
+C:\Users\900080\source\repos\eloramaysa\Aula1turma2\Migrations\ConsoleMigration\obj\Debug\ConsoleMigration.Migrations.AddNivelUsuario.resources
