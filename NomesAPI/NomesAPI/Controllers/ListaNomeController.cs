@@ -9,7 +9,7 @@ namespace NomesAPI.Controllers
 {
     public class ListaNomeController : ApiController
     {
-        List<Pessoa> listaDePessoas = new List<Pessoa>()
+       static List<Pessoa> listaDePessoas = new List<Pessoa>()
         {
             new Pessoa(){Nome= "Elóra", Idade=21},
             new Pessoa(){Nome= "Marcos", Idade=22},
@@ -23,6 +23,15 @@ namespace NomesAPI.Controllers
         public List<Pessoa> Get()
         {
             return listaDePessoas;
+        }
+
+        public List<Pessoa> Post(Pessoa values)
+        {
+            Pessoa pessoa = values;
+
+            listaDePessoas.Add(pessoa);
+
+            return listaDePessoas.OrderBy(x => x.Idade).ToList<Pessoa>();
         }
 
     }

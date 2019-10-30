@@ -1,16 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\IMCCalc",
     "\\IMCCalc\\IMCCalc",
-    "\\WEB",
-    "\\WEBAPI",
+    "\\SIteEndereco",
     "\\WEBAPI\\css",
     "\\WEB\\Exercicio1",
     "\\WEB\\Exercicio1\\css",
     "\\WEB\\Exercicio2",
     "\\WEB\\Exercicio2\\css"
   ],
-  "SelectedNode": "\\IMCCalc\\IMCCalc\\Index.html",
+  "SelectedNode": "\\SIteEndereco\\SIteEndereco.sln",
   "PreviewInSolutionExplorer": false
 }
