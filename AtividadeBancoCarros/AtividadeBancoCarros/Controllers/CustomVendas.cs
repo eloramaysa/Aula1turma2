@@ -35,40 +35,22 @@ namespace AtividadeBancoCarros.Controllers
         [Route("Api/Vendas/VendaAno/{ano}")]
         public IHttpActionResult VendaAno(int ano)
         {
-            var listaVendas = db.Vendas.ToList();
-            var listaCarros = db.Carros.ToList();
-            var conteudoRetorno = from ven in listaVendas
-                                  join car in listaCarros
-                                  on ven.Carro equals car.Id
-                                  where ven.DatInc.Year == ano
-                                  select new
-                                  {
-                                      CarroId = car.Id,
-                                      CarroNome = car.Modelo,
-                                      CarroQuantidade = ven.Quantidade,
-                                      CarroValor = ven.Valor,
-                                      CarroDataVenda = ven.DatInc.Year
-                                  };
-            return Ok(conteudoRetorno);
+        
+            var listaVendas = db.Vendas.Where(p => p.DatInc.Year == ano).ToList();
+            List<object> ListaObjetos = new List<object>();
+            
+            foreach (var item in listaVendas)
+            {
+                ListaObjetos.Add(new
+                {
+                    ID = item.Id,
+                    MarcaNome = item.Carro1.Marca1.Nome,
+                    CarroNome = item.Carro1.Modelo,
+                    Ano = item.DatInc.Year
+                });
+            }
 
-            /*  var listaVendas = db.Vendas.ToList();
-              Venda conferencia;
-              List<Venda> vendas = new List<Venda>();
-              foreach (var obj in listaVendas)
-              {
-                  foreach (var itemVenda in obj)
-                  {
-
-                  }
-                  conferencia = db.Vendas.FirstOrDefault(x => x.DatInc.Year == item);
-                  if (conferencia == null)
-                  {
-                      return NotFound();
-                  }
-                  vendas.Add(conferencia);
-              }
-
-              return Ok(vendas);*/
+            return Ok(ListaObjetos);
         }
 
         [HttpGet]
