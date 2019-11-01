@@ -37,18 +37,22 @@ namespace WebApiBancoCarros.Controllers
         {
             var listCarros = db.Carros.ToList();
 
-            var listMarcas = db.Marcas.ToList();
+           // var listMarcas = db.Marcas.ToList();
 
-            var conteudoRetorno = from mar in listMarcas
-                                  join car in listCarros on mar.Id equals car.Marca
-                                  select new
-                                  {
-                                      CarroId = car.Id,
-                                      CarroNome = car.Modelo,
-                                      MarcaId = mar.Id,
-                                      MarcaNome = mar.Nome
-                                  };
-            return conteudoRetorno;
+            //  var NomeMarca = db.Carros.Find(1).Marca1.Nome; lazyLoading 
+            List<Object> ListaObjetos = new List<Object>();
+            foreach (var item in listCarros)
+            {
+                ListaObjetos.Add(new
+                {
+                    CarroId = item.Id,
+                    CarroNome = item.Modelo,
+                    MarcaId = item.Marca,
+                    MarcaNome = item.Marca1.Nome
+                });
+            }
+
+            return ListaObjetos;
         }
         [HttpGet]
         [Route("Api/Carroes/CarrosComUsuarios")]

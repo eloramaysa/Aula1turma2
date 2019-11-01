@@ -11,11 +11,15 @@ namespace ApiImoveis.Models
     {
         [Key]
         public int Id { get; set; }
+
+        [CustomValidator("Nome")]
         public string Nome { get; set; }
 
+        [CustomValidator("DataNasc")]
         public DateTime DataNasc { get; set; }
 
-        public string Email { get; set; }
+        [EmailAddress]
+        public string Email { get; set; } = string.Empty;
 
         [JsonIgnore]
         public virtual ICollection<Imovel> Imovels { get; set; }

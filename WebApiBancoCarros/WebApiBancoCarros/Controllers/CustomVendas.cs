@@ -23,12 +23,11 @@ namespace WebApiBancoCarros.Controllers
             var retornoVendas = from ven in listaDeVendas
                                 select new
                                 {
-                                    Venda = ven.Carro1,
+                                    Venda = ven.Carro1.Modelo,
 
                                 };
 
             return retornoVendas;
-        }
         }
     }
 }

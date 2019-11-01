@@ -29,7 +29,7 @@ namespace ApiImoveis.Models
 
 
         [JsonIgnore]
-        public Proprietario ProprietarioRef { get; set; }
+        public virtual /*lazyloading*/ Proprietario ProprietarioRef { get; set; } 
 
 
     }

@@ -18,8 +18,8 @@
 
               context.Proprietarios.AddOrUpdate(x => x.Nome, new Models.Proprietario()
               {
-                  Nome = "Maria",
-                  Email = "maria@gmail.com",
+                  Nome = "Exemplo",
+                  Email = "exemplo@gmail.com",
                   DataNasc = DateTime.Parse("12/04/1984")
               }) ;
 
@@ -27,12 +27,12 @@
 
               context.Imoveis.AddOrUpdate(p => new { p.Logradouro, p.Numero, p.Complemento},   new Models.Imovel()
               {
-                  Logradouro = "Rua casa",
-                  Bairro = "Um exemplo",
-                  Municipio = "Cidade",
-                  Proprietario = 1,
-                  CEP="9000879",
-                  Numero=1852
+                  Logradouro = "Rua 2 de setembro",
+                  Bairro = "Itoupava",
+                  Municipio = "Blumenau",
+                  Proprietario = context.Proprietarios.FirstOrDefault(x => x.Nome == "Exemplo").Id,
+                  CEP="89107000",
+                  Numero=203                                                                      
 
               }) ;
         }

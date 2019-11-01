@@ -17,7 +17,7 @@ namespace ApiImoveis.Models
         {
             modelBuilder.Entity<Proprietario>()
               .HasMany(e => e.Imovels)
-              .WithRequired(e => e.ProprietarioRef)
+              .WithRequired(e => e.ProprietarioRef) //eager loading
               .HasForeignKey(e => e.Proprietario)
               .WillCascadeOnDelete(false);
 
