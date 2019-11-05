@@ -1,8 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SIteEndereco"
+    "\\ApiImoveis\\ApiImoveis",
+    "\\AtividadeBancoCarros\\AtividadeBancoCarros",
+    "\\AtividadeBancoCarros\\AtividadeBancoCarros\\Controllers",
+    "\\IMCCalc",
+    "\\IMCCalc\\IMCCalc\\Scripts",
+    "\\SistemaPessoa\\SistemaPessoa",
+    "\\WebCoreImoveis\\WebCoreImoveis",
+    "\\WEB\\ConversorProf",
+    "\\WEB\\ConversorProf\\js"
   ],
-  "SelectedNode": "\\SIteEndereco\\SIteEndereco.sln",
+  "SelectedNode": "\\IMCCalc\\IMCCalc.sln",
   "PreviewInSolutionExplorer": false
 }

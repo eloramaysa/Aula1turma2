@@ -40,6 +40,13 @@ namespace WebCoreUsuarios.Controllers
 
             return usuario;
         }
+        [Route("api/AcessoLogin")]
+        [HttpPost]
+        public bool LoginSistema(Usuario usuarios)
+        {
+            //Expressão lambda para saber se o login e senha informado estao no banco de dados 
+            return _context.Usuario.ToList().Exists(x => x.LoginUsu == usuarios.LoginUsu && x.Senha == usuarios.Senha);
+        }
 
         // PUT: api/Usuarios/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
